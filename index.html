@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Yanone+Kaffeesatz&display=swap"
+        rel="stylesheet">
+    <title>Formulario de Encuesta</title>
+</head>
+
+<body>
+    <div>
+        <header></header>
+    </div>
+
+    <div class="contenedor-encabezado">
+
+        <h1 id="title">Formulario de Inscripción Academia Geek</h1>
+        <p id="description">Gracias por permitirnos ayudarte en tu crecimiento profesional</p>
+
+    </div><br>
+
+    <div class="contenedor-Formulario">
+        <form action="" class="form" id="survey-form" onsubmit="">
+            <div>
+                <div id="dato1">
+                    <label for="name" id="name-label">Nombre</label><br>
+                    <input id="name" type="text" placeholder="Nombres" required><br>
+                </div>
+                <div id="dato2">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input id="email" type="Email" name="email" placeholder="Email" required><br>
+                </div>
+                <div id="dato3">
+                    <label for="age" id="number-label">Edad</label><br>
+                    <input id="number" type="number" name="edad" placeholder="Edad" min="0" max="99">
+                </div>
+            </div><br>
+
+            <div id="dato4">
+                <label for="seleccion">Nivel de conocimientos de programación</label><br>
+                <select name="seleccion-dd" id="dropdown" value="seleccion">
+                    <option value="NK">Ningun conocimiento</option>
+                    <option value="LT">Se algunas cosas</option>
+                    <option value="B">Básico</option>
+                    <option value="I">Intermedio</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="seleccion1">Si pudieras elegir, qué preferirias hacer en programación? </label><br>
+                <div name=opcionesRB>
+                    <input type="Radio" name="opcionesRB" value="front" checked> Desarrollar la interfaz de una
+                    aplicacion
+                    <br>
+                    <input type="Radio" name="opcionesRB" value="back"> Manipular la información proporcionada por el
+                    usuario
+                    <br>
+                    <input type="Radio" name="opcionesRB" value="both"> Me gustan las dos
+                    <br>
+                </div>
+            </div><br>
+
+            <div>
+                <label for="seleccion2">Cual es tu motivación para elegir una carrera de Desarrollador?</label><br>
+                <div name="miFormulario" action="">
+                    <input type="checkbox" id="cbox1" value="first_checkbox"> Cambiar de profesión<br>
+                    <input type="checkbox" id="cbox2" value="second_checkbox"> Cambiar de trabajo<br>
+                    <input type="checkbox" id="cbox3" value="third_checkbox"> Mejorar ingresos económicos<br>
+                    <input type="checkbox" id="cbox4" value="fourth_checkbox"> Proyecto personal<br>
+                    <input type="checkbox" id="cbox4" value="fourth_checkbox"> Aprender algo nuevo<br>
+                </div>
+            </div><br>
+
+            <div>
+                <label for="">Algo adicional que nos quisieras compartir?</label><br>
+                <textarea id="areaTexto" cols="73" rows="5" placeholder="Añade aquí tus comentarios..."></textarea>
+            </div>
+
+            <div>
+                <input id="submit" type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
